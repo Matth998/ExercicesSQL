@@ -25,7 +25,7 @@ create table tb_produtos(
     marca_id bigint not null,
     
     primary key (id),
-    foreign key (id) references tb_marcas(id)
+    foreign key (marca_id) references tb_marcas(id)
 
 );
 
