@@ -46,7 +46,7 @@ insert into tb_pizza(sabor, borda, preco, id_categoria) value ("Chocolate", "Fin
 select * from tb_pizza;
 
 select * from tb_pizza where preco > 45;
-select * from tb_pizza where preco < 45;
+select * from tb_pizza where preco between 3 and 60;
 select * from tb_pizza where sabor like 'C%';
 select * from tb_pizza inner join tb_categoria on tb_pizza.id_categoria = tb_categoria.id;
 select * from tb_pizza as id_categoria inner join tb_categoria as categoria on id_categoria = categoria like 'Doce%';

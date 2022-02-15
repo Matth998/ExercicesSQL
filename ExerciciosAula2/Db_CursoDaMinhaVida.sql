@@ -40,7 +40,7 @@ insert into tb_curso(descricao, duracao, preco, id_categoria) value ("Biomedicin
 insert into tb_curso(descricao, duracao, preco, id_categoria) value ("Engenharia da Computação", "8 Semestres", 887.99, 1);
 
 select * from tb_curso where preco > 50;
-select * from tb_curso where preco >= 3 and preco <= 60;
+select * from tb_curso where preco between 3 and 60;
 select * from tb_curso where descricao like 'J%';
 select * from tb_curso inner join tb_categoria on tb_curso.id_categoria = tb_categoria.id;
 select * from tb_curso as id_categoria inner join tb_categoria on id_categoria = tb_categoria.descricao like 'Informatica%';

@@ -39,7 +39,7 @@ insert into tb_produto(descricao, preco, id_categoria) value ("Kit Sabonete Líq
 insert into tb_produto(descricao, preco, id_categoria) value ("Removedor De Esmalte Sem Acetona Ever Care 100ml", 3.55, 1);
 
 select * from tb_produto where preco > 50;
-select * from tb_produto where preco < 50;
+select * from tb_produto where preco between 3 and 60;
 select * from tb_produto where descricao like 'L%';
 select * from tb_produto inner join tb_categoria on tb_produto.id_categoria = tb_categoria.id;
 select * from tb_produto as id_categoria inner join tb_categoria on id_categoria = tb_categoria.descricao like 'Cosméticos%';

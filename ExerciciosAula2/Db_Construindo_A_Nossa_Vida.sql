@@ -39,7 +39,7 @@ insert into tb_produto (descricao, preco, id_categoria) value ("Ducha Higiênica
 insert into tb_produto (descricao, preco, id_categoria) value ("Chuveiro de Parede Max 1977C.CT Deca", 218.14, 5);
 
 select * from tb_produto where preco > 50;
-select * from tb_produto where preco >= 3 and preco <= 60;
+select * from tb_produto where preco between 3 and 60;
 select * from tb_produto where descricao like 'C%';
 select * from tb_produto inner join tb_categoria on tb_produto.id_categoria = tb_categoria.id;
 select * from tb_produto as id_categoria inner join tb_categoria on id_categoria = tb_categoria.descricao like 'Banheiro%';
