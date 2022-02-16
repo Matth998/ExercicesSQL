@@ -50,7 +50,7 @@ select * from tb_personagem;
 select * from tb_personagem where ataque > 2000;
 select * from tb_personagem where ataque between 1000 and 2000;
 select nome from tb_personagem where nome like 'C%';
-select velocidade from tb_personagem inner join tb_classe on tb_personagem.id_classe = tb_classe.id;
+select * from tb_personagem inner join tb_classe on tb_personagem.id_classe = tb_classe.id;
 select * from tb_personagem as id_classe inner join tb_classe as classe on id_classe = classe like 'Mago%';
 
 select * from tb_personagem;
